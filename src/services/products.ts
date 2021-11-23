@@ -1,5 +1,5 @@
 import { getRepository } from "typeorm";
-import { Phone } from "../entitys/Phone";
+import { Phone } from "../entities/Phone";
 
 export const getList = async (take, skip) => {
   const productsRepository = getRepository(Phone);
