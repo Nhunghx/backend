@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
-import { getList } from "../service/products";
-import { getDetail } from "../service/products";
+import { getList } from "../services/products";
+import { getDetail } from "../services/products";
 
 exports.getList = async function ( req: Request, res: Response ) {
   const take = +req.query.limit;
